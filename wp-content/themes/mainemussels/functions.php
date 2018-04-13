@@ -30,7 +30,7 @@ add_action( 'wp_enqueue_scripts', 'mainemussels_script_enqueue' );
 */
 
 register_nav_menus( array(
-	'primary' => __( 'Primary Menu', 'mainemussels' ),
+	'primary' => __( 'Primary Menu', 'Header Navigation' ),
 ) );
 
 
