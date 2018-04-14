@@ -19,10 +19,28 @@
 
  class MaineMusselsManagerPlugin
  {
-    function __construct(){
-
+    function activate(){
+        echo "Plugin was activated";
+    }
+    function deactivate(){
+        echo "Plugin was deactivated";        
+    }
+    function uninstall(){
+        
     }
  }
+
 if ( class_exists('MaineMusselsManagerPlugin')){
     $mainemusselsmanagerPlugin = new MaineMusselsManagerPlugin();
 } 
+
+// activation
+
+register_activation_hook( __FILE__, array($mainemusselsmanagerPlugin, 'activate') );
+
+// deactivation
+
+register_deactivation_hook( __FILE__, array($mainemusselsmanagerPlugin, 'deactivate') );
+
+// uninstall
+
