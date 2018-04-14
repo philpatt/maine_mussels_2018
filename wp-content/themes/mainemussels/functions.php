@@ -15,7 +15,7 @@ if ( ! file_exists( get_template_directory() . '/class-wp-bootstrap-navwalker.ph
 }
 
 function mainemussels_script_enqueue() {
-    wp_enqueue_style( 'customstyle', get_template_directory_uri() . '/css/mainemussels.css', array(), '1.0.0', 'all' );
+    wp_enqueue_style( 'customstyle', get_template_directory_uri() . '/css/mainemussels.css', array(), 'all' );
     wp_enqueue_script( 'customjs', get_stylesheet_directory_uri() . '/js/mainemussels.js', array(), '1.0.0', 'true' );
     
 }

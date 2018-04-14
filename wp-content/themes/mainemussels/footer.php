@@ -1,3 +1,5 @@
+        </div><!-- this is the closing tag for the conent  -->
+    </div><!-- this is the closing tag for container  -->
     <footer>
         <p>this is my footer</p>
         <?php wp_nav_menu(array('theme_location'=>'secondary')); ?>
